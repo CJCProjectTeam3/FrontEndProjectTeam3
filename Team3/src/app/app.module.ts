@@ -5,17 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+ 
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot(),
+    
     
   ],
   providers: [],
