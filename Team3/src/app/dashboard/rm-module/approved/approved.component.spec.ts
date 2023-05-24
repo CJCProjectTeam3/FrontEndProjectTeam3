@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmiCalculatorComponent } from './emi-calculator.component';
+import { ApprovedComponent } from './approved.component';
 
-describe('EmiCalculatorComponent', () => {
-  let component: EmiCalculatorComponent;
-  let fixture: ComponentFixture<EmiCalculatorComponent>;
+describe('ApprovedComponent', () => {
+  let component: ApprovedComponent;
+  let fixture: ComponentFixture<ApprovedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EmiCalculatorComponent ]
+      declarations: [ ApprovedComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EmiCalculatorComponent);
+    fixture = TestBed.createComponent(ApprovedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

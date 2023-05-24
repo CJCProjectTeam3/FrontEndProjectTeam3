@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { AdminLoginComponent } from '../admin-login/admin-login.component';
 
 @Component({
   selector: 'app-navigation',
@@ -8,11 +10,18 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private router:Router){}
+  constructor(private router:Router, private modalService:BsModalService){}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
+
+
+  adminloginModal: BsModalRef;
+  openAdminLoginModal(){
+    this.adminloginModal=this.modalService.show(AdminLoginComponent);
+  }
+
+  
 
 
 

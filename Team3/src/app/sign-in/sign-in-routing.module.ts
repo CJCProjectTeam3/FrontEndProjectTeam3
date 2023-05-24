@@ -11,12 +11,13 @@ const routes: Routes = [
     path:'', component:LoginComponent,
     children : [
       {path : '' , component:LoginFormComponent},
-      {path : 'applicationForm', component: ApplicationFormComponent},
+      {path : 'appliCationForm', component: ApplicationFormComponent},
       {path: 'adminLogin', component:AdminLoginComponent },
       {path: 'emiCalculator', component:EmiCalculatorComponent}
     ]
 
-  }
+  },
+  // {path:'home/emiCalculator', c}
 ];
 
 @NgModule({
