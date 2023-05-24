@@ -16,6 +16,7 @@ import { DashHeaderComponent } from '../dashboard/templates/dash-header/dash-hea
 import { DashHomeComponent } from '../dashboard/templates/dash-home/dash-home.component';
 import { DashMainComponent } from '../dashboard/templates/dash-main/dash-main.component';
 import { DashSidebarComponent } from '../dashboard/templates/dash-sidebar/dash-sidebar.component';
+import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DashSidebarComponent } from '../dashboard/templates/dash-sidebar/dash-s
     DashHeaderComponent,
     DashHomeComponent,
     DashMainComponent,
-    DashSidebarComponent
+    DashSidebarComponent,
+    EnquiryFormComponent
   ],
   imports: [
     CommonModule,

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
-
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -25,6 +25,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     ReactiveFormsModule,
     FormsModule,
     ModalModule.forRoot(),
+    HttpClientModule
     
     
   ],

@@ -18,19 +18,19 @@ const routes: Routes = [
   {
     path: 'dashHome', component : DashHomeComponent, children:[
       {
-        path:'RM', loadChildren: () => import('src/app/dashboard/rm-module/rm-module-routing.module').then(e => e.RmModuleRoutingModule)
+        path:'rm', loadChildren: () => import('src/app/dashboard/rm-module/rm-module-routing.module').then(e => e.RmModuleRoutingModule)
       },
       
       {
-        path:'IO', loadChildren:() => import('src/app/dashboard/io-module/io-module.module').then(r=>r.IoModuleModule)
+        path:'io', loadChildren:() => import('src/app/dashboard/io-module/io-module.module').then(r=>r.IoModuleModule)
       },
 
       {
-        path:'DO', loadChildren : () => import('src/app/dashboard/do-module/do-module.module').then(e=>e.DoModuleModule)
+        path:'do', loadChildren : () => import('src/app/dashboard/do-module/do-module.module').then(e=>e.DoModuleModule)
       },
 
       {
-        path:'PO', loadChildren : () =>import('src/app/dashboard/po-module/po-module.module').then(e => e.PoModuleModule)
+        path:'po', loadChildren : () =>import('src/app/dashboard/po-module/po-module.module').then(e => e.PoModuleModule)
 
       }
     ]
