@@ -33,27 +33,27 @@ export class AdminLoginComponent implements OnInit {
   //     else if (admin.adminType == 'io') { this.router.navigateByUrl("/dashHome/io"); }
   //     else if (admin.adminType == 'do') { this.router.navigateByUrl("/dashHome/do"); }
   //     else if (admin.adminType == 'po') { this.router.navigateByUrl("/dashHome/po"); }
-      
+
   //   });
   // }
 
-  submitForm(){
+  submitForm() {
 
-    if(this.adminLoginForm.controls['username'].value == "rm"  && this.adminLoginForm.controls['password'].value == "rm" ){
+    if (this.adminLoginForm.controls['username'].value == "rm" && this.adminLoginForm.controls['password'].value == "rm") {
       localStorage.setItem("userType", "RM");
-      this.router.navigateByUrl("/dashHome/rm");
+      this.router.navigateByUrl("/dashHome/RM");
     }
-    else if(this.adminLoginForm.controls['username'].value == "io"  && this.adminLoginForm.controls['password'].value == "io" ){
+    else if (this.adminLoginForm.controls['username'].value == "io" && this.adminLoginForm.controls['password'].value == "io") {
       localStorage.setItem('userType', 'IO');
       this.router.navigateByUrl('/dashHome/io');
     }
 
-    else if(this.adminLoginForm.controls['username'].value == "do"  && this.adminLoginForm.controls['password'].value == "do" ){
+    else if (this.adminLoginForm.controls['username'].value == "do" && this.adminLoginForm.controls['password'].value == "do") {
       localStorage.setItem("userType", "DO");
       this.router.navigateByUrl("/dashHome/do")
     }
 
-    else if(this.adminLoginForm.controls['username'].value == "po"  && this.adminLoginForm.controls['password'].value == "po" ){
+    else if (this.adminLoginForm.controls['username'].value == "po" && this.adminLoginForm.controls['password'].value == "po") {
       localStorage.setItem("userType", "PO");
       this.router.navigateByUrl("/dashHome/po")
     }

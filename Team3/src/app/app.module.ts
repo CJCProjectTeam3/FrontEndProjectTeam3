@@ -7,6 +7,8 @@ import { HomeModule } from './home/home.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { HttpClientModule } from '@angular/common/http'
+import { JsonPipe } from '@angular/common';
+import { RmModuleModule } from './dashboard/rm-module/rm-module.module';
 
 
 
@@ -14,8 +16,6 @@ import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
- 
-
 
   ],
   imports: [
@@ -25,11 +25,13 @@ import { HttpClientModule } from '@angular/common/http'
     ReactiveFormsModule,
     FormsModule,
     ModalModule.forRoot(),
-    HttpClientModule
-    
-    
+    HttpClientModule,
+    RmModuleModule
+
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

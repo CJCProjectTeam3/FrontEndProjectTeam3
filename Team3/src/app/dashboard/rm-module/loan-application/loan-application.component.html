@@ -1,1 +1,250 @@
-<p>loan-application works!</p>
+<!-- <p>loan-application works!</p> -->
+<div class="form-container">
+
+    <!--Applicant Basic Details-->
+
+    <h2>Home Loan Application Form</h2>
+    <form>
+        <hr>
+        <h4 class="ms-2">
+            <li>Applicant Basic Details</li>
+        </h4>
+        <hr class="mb-5 mt-4">
+
+
+        <label for="applicantName"><i class="bi bi-person-fill ms-2"></i> Applicant Name</label>
+        <input type="text" id="applicantName" name="applicantName" required>
+
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="panNumber"> <i class="bi bi-person-vcard  ms-2"></i> PAN Number</label>
+                <input type="text" id="panNumber" name="panNumber" required>
+            </div>
+            <div class="secondrow">
+                <label for="adharNumber"><i class="bi bi-person-vcard-fill ms-2"></i> Aadhar Number</label>
+                <input type="text" id="adharNumber" name="adharNumber" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="contact"><i class="bi bi-telephone-fill ms-2"></i> Mobile Number</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            <div class="secondrow">
+                <label for="applicationStatus"><i class="bi bi-chat-square-text ms-2"></i> Application Status</label>
+                <input type="text" id="applicationStatus" name="applicationStatus" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="secondrow">
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="applicantSalary">Applicant Salary</label>
+                <input type="number" id="applicantSalary" name="applicantSalary" required>
+            </div>
+            <div class="secondrow">
+                <label for="requiredLoanAmount">Required Loan Amount</label>
+                <input type="number" id="requiredLoanAmount" name="requiredLoanAmount" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="cibilScore">CIBIL Score</label>
+                <input type="number" id="cibilScore" name="cibilScore" required>
+            </div>
+            <div class="secondrow">
+                <label for="applicantEmail"><i class="bi bi-envelope-at-fill ms-2"></i> Applicant Email</label>
+                <input type="text" id="applicantEmail" name="applicantEmail" required>
+            </div>
+        </div>
+
+
+
+        <!--applicant Address-->
+
+
+        <!-- Permanent Address -->
+        <h4 class="ms-2  mt-5">
+            <li>Permanent Address</li>
+        </h4>
+        <hr class="mb-5">
+        <div class="threeform-row">
+
+            <div class="firstperrow">
+                <label for="permanentAreaname">Area Name</label>
+                <input type="text" id="permanentAreaname" name="permanentAreaname" required>
+            </div>
+
+            <div class="secondperrow">
+                <label for="permanentCityname">City Name</label>
+                <input type="text" id="permanentCityname" name="permanentCityname" required>
+            </div>
+
+            <div class="thirdperrow">
+                <label for="permanentDistrict">District</label>
+                <input type="text" id="permanentDistrict" name="permanentDistrict" required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="permanentState">State</label>
+                <input type="text" id="permanentState" name="permanentState" required>
+            </div>
+            <div class="secondrow">
+                <label for="permanentPincode">Pincode</label>
+                <input type="number" id="permanentPincode" name="permanentPincode" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="permanentHouseNumber">House Number</label>
+                <input type="text" id="permanentHouseNumber" name="permanentHouseNumber" required>
+            </div>
+            <div class="secondrow">
+                <label for="permanentStreetName">Street Name</label>
+                <input type="text" id="permanentStreetName" name="permanentStreetName" required>
+            </div>
+        </div>
+
+
+
+        <!-- Local Address -->
+
+        <h4 class="ms-2  mt-5">
+            <li>Local Address</li>
+        </h4>
+        <hr class="mb-5">
+
+        <input class="mb-5"
+            style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+            type="checkbox" id="sameAsPermanent" name="sameAsPermanent"> Same as Permanent Address
+
+        <div class="threeform-row">
+
+            <div class="firstperrow">
+                <label for="localAreaname">Area Name</label>
+                <input type="text" id="localAreaname" name="localAreaname" required>
+            </div>
+
+            <div class="secondperrow">
+                <label for="localCityname">City Name</label>
+                <input type="text" id="localCityname" name="localCityname" required>
+            </div>
+
+            <div class="thirdperrow">
+                <label for="localDistrict">District</label>
+                <input type="text" id="localDistrict" name="localDistrict" required>
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="localState">State</label>
+                <input type="text" id="localState" name="localState" required>
+            </div>
+            <div class="secondrow">
+                <label for="localPincode">Pincode</label>
+                <input type="number" id="localPincode" name="localPincode" required>
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="localHouseNumber">House Number</label>
+                <input type="text" id="localHouseNumber" name="localHouseNumber" required>
+            </div>
+            <div class="secondrow">
+                <label for="localStreetName">Street Name</label>
+                <input type="text" id="localStreetName" name="localStreetName" required>
+            </div>
+
+        </div>
+
+        <!--occupation-->
+
+        <h4 class="ms-2  mt-5">
+            <li>Job Information</li>
+        </h4>
+        <hr class="mb-5">
+
+        <div class="form-row">
+            <div class="firstrow">
+                <label for="occupation">Occupation Type</label>
+                <input type="text" id="occupation" name="occupation" required>
+            </div>
+
+            <div class="secondrow">
+                <label for="annualIncome">Annual Income</label>
+                <input type="text" id="annualIncome" name="annualIncome" required>
+            </div>
+        </div>
+
+
+
+        <!--personal Documents-->
+
+        <h4 class="ms-2  mt-5">
+            <li>Personal Documents</li>
+        </h4>
+        <hr class="mb-5">
+
+
+        <div class="threeform-row">
+
+            <div class="firstperrow">
+                <label for="panImage">PAN Image</label>
+                <input type="file" id="panImage" name="panImage" accept="image/*" required>
+            </div>
+
+            <div class="secondperrow ms-5">
+                <label for="adharImage">Aadhaar Image</label>
+                <input type="file" id="adharImage" name="adharImage" accept="image/*" required>
+            </div>
+
+            <div class="thirdperdrow ms-5">
+                <label for="photograph">Photograph</label>
+                <input type="file" id="photograph" name="photograph" accept="image/*" required>
+            </div>
+        </div>
+
+        <div class="threeform-row mt-5">
+
+            <div class="firstperrow">
+                <label for="signImage">Signature Image</label>
+                <input type="file" id="signImage" name="signImage" accept="image/*" required>
+            </div>
+
+            <div class="secondperrow ms-5">
+                <label for="itrCopy">ITR Copy</label>
+                <input type="file" accept="" id="itrCopy" name="itrCopy" accept=".pdf,.txt,.png,.jpg,.jpeg,.docx"
+                    required>
+            </div>
+
+            <div class="thirdperrow ms-5">
+                <label for="salarySlip">Salary Slip</label>
+                <input type="file" id="salarySlip" name="salarySlip" accept=".pdf,.txt,.png,.jpg,.jpeg,.docx" required>
+            </div>
+        </div>
+      
+    </form>
+</div>

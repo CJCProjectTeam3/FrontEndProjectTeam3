@@ -17,6 +17,7 @@ import { DashHomeComponent } from '../dashboard/templates/dash-home/dash-home.co
 import { DashMainComponent } from '../dashboard/templates/dash-main/dash-main.component';
 import { DashSidebarComponent } from '../dashboard/templates/dash-sidebar/dash-sidebar.component';
 import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
     DashHomeComponent,
     DashMainComponent,
     DashSidebarComponent,
-    EnquiryFormComponent
+    EnquiryFormComponent,
+    ErrorPageComponent
   ],
   imports: [
     CommonModule,

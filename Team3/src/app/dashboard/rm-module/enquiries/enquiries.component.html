@@ -1,1 +1,30 @@
-<p>enquiries works!</p>
+<!-- <p>enquiries works!</p> -->
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Sr.No.</th>
+            <th>Id</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Age</th>
+            <th scope="col">PAN Number</th>
+            <th scope="col">Contact</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of allEnquires ,let i=index">
+            <td>{{i+1}}</td>
+            <td>{{e.enquiryId}}</td>
+            <td>{{e.fullName}}</td>
+            <td>{{e.address}}</td>
+            <td>{{e.age}}</td>
+            <td>{{e.panNumber}}</td>
+            <td>{{e.contact}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="onClickCibilCheck(e.enquiryId)">Check Cbil</button>
+               
+            </td>
+        </tr>
+    </tbody>
+</table>

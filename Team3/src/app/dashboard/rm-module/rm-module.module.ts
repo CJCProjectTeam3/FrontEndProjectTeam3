@@ -6,6 +6,8 @@ import { EnquiriesComponent } from './enquiries/enquiries.component';
 import { ApprovedComponent } from './approved/approved.component';
 import { LoanApplicationComponent } from './loan-application/loan-application.component';
 import { RejectedComponent } from './rejected/rejected.component';
+import { CibilCheckComponent } from './cibil-check/cibil-check.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,11 +15,15 @@ import { RejectedComponent } from './rejected/rejected.component';
     EnquiriesComponent,
     ApprovedComponent,
     LoanApplicationComponent,
-    RejectedComponent
+    RejectedComponent,
+    CibilCheckComponent
   ],
   imports: [
     CommonModule,
-    RmModuleRoutingModule
-  ]
+    RmModuleRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
+ exports: []
 })
 export class RmModuleModule { }

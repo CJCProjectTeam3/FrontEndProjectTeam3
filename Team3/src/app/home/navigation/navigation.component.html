@@ -1,12 +1,13 @@
 <div class="container" style="width: 1200px; height: 70px;">
-    <div class="row" >
+    <div class="row">
         <div class="col-4" style=" height: 70px;
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: left;">
             <!-- <a href="" style="text-decoration: none; font-size: 35px; color: black; font-family: 'Roboto', sans-serif;">Home Loan</a> -->
-          <a href="">  <img src="/assets/Screenshot 2023-05-18 135653.png" alt="" style="width: 100px; height: 60px;"></a>
+            <a href=""> <img src="/assets/Screenshot 2023-05-18 135653.png" alt=""
+                    style="width: 100px; height: 60px;"></a>
         </div>
 
         <div class="col-8" style=" height: 70px;
@@ -14,12 +15,12 @@
         align-items: center;
         text-align: center;
         justify-content: space-between;">
-            <button  href="/">Home</button>
-            <button  routerLink="applicationForm" >Application Form</button>
+            <button href="/">Home</button>
+            <button (click)="openEnquiryFormModal()">Enquiry Form</button>
             <button routerLink="emiCalculator">Emi Calculator</button>
             <button href="#">Conact</button>
             <button href="#">About</button>
-            <button  (click)="openAdminLoginModal()">Admin Login</button>
+            <button (click)="openAdminLoginModal()">Admin Login</button>
         </div>
     </div>
 </div>

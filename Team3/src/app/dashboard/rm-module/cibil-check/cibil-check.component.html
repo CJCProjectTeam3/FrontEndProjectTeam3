@@ -1,0 +1,21 @@
+<!-- <p>cibil-check works!</p> -->
+
+<div class="modal-header">
+    <h2 class="text-center">CIBIL</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+        (click)="cibilRef.hide()"></button>
+</div>
+<form [formGroup]="checkCibilForm">
+    {{passCibil.enquiryId}}
+    <div class="form-group">
+        <div>
+            <label>Cibil Score</label>
+            <input type="number" formControlName="cibilScore" [(ngModel)]="randomNumber">
+            <button (click)="generateNumber()">Check</button>
+        </div>
+        <div>
+            <button (click)="onClickApproved()" class="btn btn-success">Approved</button>
+            <button class="btn btn-danger">Rejected</button>
+        </div>
+    </div>
+</form>

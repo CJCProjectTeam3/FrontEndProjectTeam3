@@ -7,7 +7,7 @@ import { SignInComponent } from '../sign-in/sign-in.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
 
@@ -20,7 +20,7 @@ export class HeaderComponent {
   // }
 
   bsModalRef: BsModalRef;
-  constructor(private modalService: BsModalService) {}
+  constructor(private modalService: BsModalService) { }
   openLoginModal() {
     this.bsModalRef = this.modalService.show(SignInComponent);
   }

@@ -9,7 +9,8 @@ const routes: Routes = [
   {path:'enquiries', component:EnquiriesComponent},
   {path:'approved', component:ApprovedComponent},
   {path:'rejected', component : RejectedComponent},
-  {path:'loanApplication', component:LoanApplicationComponent}
+  { path: 'loanApplication', component: LoanApplicationComponent },
+
 ];
 
 @NgModule({
